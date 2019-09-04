@@ -1,0 +1,24 @@
+package projet1;
+
+import java.util.Scanner;
+
+public class sdz1 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i = 0, nbre = 0;
+		while(i <= 9)
+		 {
+		     for (int j = 0; j < 10; j++)
+		        nbre++;
+		     	System.out.print(nbre + "\n");
+		    	 
+		     i++;
+		     System.out.print(i+ "\n");
+		}
+		System.out.print(nbre);
+	}
+
+}

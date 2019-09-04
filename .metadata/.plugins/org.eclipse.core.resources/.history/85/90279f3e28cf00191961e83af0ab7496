@@ -1,0 +1,14 @@
+package projet1;
+
+import java.util.Scanner;
+
+public class sdz1 {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ville ville = new Ville();
+		
+	}
+
+}
