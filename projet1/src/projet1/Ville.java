@@ -1,16 +1,16 @@
 package projet1;
 
 public class Ville {
-	private String nomVille;
-	private String nomPays;
-	private int nbreHabitants;
-	private char categorie;
+	protected String nomVille;
+	protected String nomPays;
+	protected int nbreHabitants;
+	protected char categorie;
 	
 	 //Variables publiques qui comptent les instances
 	public static int nbreInstances = 0;
 
 	  //Variable privée qui comptera aussi les instances
-	private static int nbreInstancesBis = 0;  
+	protected static int nbreInstancesBis = 0;  
 	
 	
 	//Retourne le nom de la ville
@@ -73,7 +73,7 @@ public class Ville {
 	  }
 
 		  //Retourne la description de la ville
-	  public String decrisToi()
+	  public String toString()
 	  {
 		  return "\t"+this.nomVille+" est une ville de "+this.nomPays+ ", elle comporte : "+this.nbreHabitants+" habitant(s) => elle est donc de catégorie : "+this.categorie;
 	  }

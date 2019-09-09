@@ -22,6 +22,9 @@ public class sdz1 {
 		System.out.println("\n v = "+v.getNom()+" ville de  "+v.getNombreHabitants()+ " habitants se situant en "+v.getNomPays());
 		System.out.println(" v1 = "+v1.getNom()+" ville de  "+v1.getNombreHabitants()+ " habitants se situant en "+v1.getNomPays());
 		System.out.println(" v2 = "+v2.getNom()+" ville de  "+v2.getNombreHabitants()+ " habitants se situant en "+v2.getNomPays()+"\n\n");
+		
+		Capitale cap = new Capitale("Paris", 654987, "France", "la tour Eiffel");
+		System.out.println("\n"+cap.toString());
 		        
 		/*
 		  Nous allons interchanger les Villes v1 et v2
@@ -44,6 +47,31 @@ public class sdz1 {
 		      
 		System.out.println(" v1 = "+v1.getNom()+" ville de  "+v1.getNombreHabitants()+ " habitants se situant en "+v1.getNomPays());
 		System.out.println(" v2 = "+v2.getNom()+" ville de  "+v2.getNombreHabitants()+ " habitants se situant en "+v2.getNomPays()+"\n\n");
+		
+		
+		Ville[] tableau = new Ville[6];
+		        
+	
+		String[] tab = {"Marseille", "lille", "caen", "lyon", "paris", "nantes"};
+		int[] tab2 = {123456, 78456, 654987, 75832165, 1594, 213};
+		         
+		
+		for(int i = 0; i < 6; i++){
+		  if (i <3){
+		    Ville V = new Ville(tab[i], tab2[i], "france");
+		    tableau[i] = V;
+		  }
+		         
+		  else{
+		    Capitale C = new Capitale(tab[i], tab2[i], "france", "la tour Eiffel");
+		    tableau[i] = C;
+		  }
+		}
+		                 
+	
+		for(Object obj : tableau){
+		  System.out.println(obj.toString()+"\n");
+		}
 	}
 
 }
